@@ -2,4 +2,5 @@ Miscellaneous linux utilities
 
 INSTALL
 
+- chmod u+x scripts/*
 - Copy scripts/* to /usr/local/bin (or equivalent) and make sure directory is in $PATH
