@@ -1,0 +1,3 @@
+#!/bin/bash
+
+ps -e -orss=,args= | sort -b -k1,1n | pr -TW130
