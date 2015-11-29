@@ -1,0 +1,4 @@
+#!/bin/bash
+LAST_GUID=`getent group | cut -d: -f3 | sort -n | tail -2 | head -1`
+NEXT_GUID=`expr $LAST_GUID + 1`
+echo $NEXT_GUID

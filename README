@@ -1,1 +1,5 @@
 Miscellaneous linux utilities
+
+INSTALL
+
+- Copy scripts/* to /usr/local/bin (or equivalent) and make sure directory is in $PATH
