@@ -1,0 +1,10 @@
+#!/bin/bash
+
+pgrep "php-fpm"
+ 
+if [ $? -ne 0 ]; then
+ printf "restarting php-fpm ..."
+ systemctl restart php-fpm
+else
+ printf "php-fpm is running";
+fi

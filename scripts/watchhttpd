@@ -1,0 +1,10 @@
+#!/bin/bash
+
+pgrep "httpd"
+ 
+if [ $? -ne 0 ]; then
+ printf "restarting httpd ..."
+ systemctl restart httpd
+else
+ printf "httpd running"
+fi
