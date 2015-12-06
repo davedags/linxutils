@@ -1,6 +1,6 @@
 #!/bin/bash
 
-pgrep "httpd"
+pgrep httpd
  
 if [ $? -ne 0 ]; then
  printf "restarting httpd ..."
