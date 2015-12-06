@@ -1,6 +1,6 @@
 #!/bin/bash
 
-pgrep "php-fpm"
+pgrep php-fpm
  
 if [ $? -ne 0 ]; then
  printf "restarting php-fpm ..."
